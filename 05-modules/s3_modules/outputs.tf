@@ -25,3 +25,6 @@ output "arn" {
 output "website" {
   value = aws_s3_bucket.this.website_endpoint
 }
+output "files" {
+  value = [for filename, data in module.objects : filename]
+}

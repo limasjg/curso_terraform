@@ -26,3 +26,18 @@ variable "website" {
   description = ""
   default     = {}
 }
+
+variable "key_prefix" {
+  type    = string
+  default = ""
+}
+
+variable "files" {
+  type    = string
+  default = ""
+}
+
+variable "versioning" {
+  type    = map(string)
+  default = {}
+}
